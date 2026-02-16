@@ -1,0 +1,10 @@
+name: Tesla Pulse 364
+on:
+  schedule:
+    - cron: '* * * * *'
+  workflow_dispatch:
+jobs:
+  pulse:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo 'Beacon 364/369 Active'
